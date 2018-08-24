@@ -12,7 +12,7 @@
 
 1. Install [GIT](https://git-scm.com) and GIT command line tools
 2. Install node [node.js](http://nodejs.org)
-3. `git clone https://<your-enterprise-id>@innersource.accenture.com/scm/kpis/kpis_frontend.git` - Clone using HTTPS protocol
+3. `git clone `
 4. `npm install -g webpack` - install webpack
 5. `npm install` - install local dependencies
 &nbsp;
