@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "rules": {
+    "declaration-colon-space-after": "always",
+    "indentation": 2,
+    "max-empty-lines": 2,
+    "block-no-empty": null
+  }
+}

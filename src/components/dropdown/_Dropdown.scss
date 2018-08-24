@@ -1,0 +1,37 @@
+$box-width: $grid-size * 14;
+
+// DropdownInterface is outside the app DOM
+.DropdownInterface {
+  position: fixed;
+  box-sizing: border-box;
+  width: $box-width !important;
+  max-height: $grid-size * 16;
+  overflow-y: auto;
+  
+  .item {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: $grid-size / 2 $grid-size;
+    font-size: $font-size-sm;
+    
+    &.focused {
+      background-color: $shakespeare;
+      color: $white;
+    }
+  }
+  
+  .item, :empty::after {
+    background-color: $white-smoke;
+  }
+}
+
+.dropdown {
+  width: $box-width;
+  margin: 0 $grid-size;
+  .inputParent {
+    width: $box-width;
+    height: $grid-size * 3;
+    border-bottom: 1px solid $shakespeare;
+    padding-left: $grid-size / 2;
+  }
+}

@@ -1,0 +1,14 @@
+.shark-kpi-header {
+  height: $grid-size * 10;
+  padding: $grid-size * 2;
+  .logo-wrapper {
+    border-left: 2px solid $pink;
+    border-right: 2px solid $pink;
+    padding: 0 $grid-size * 4;
+    .heading-4 {
+      text-align: center;
+      margin-left: $grid-size * 2;
+      line-height: 1.6;
+    }
+  }
+}

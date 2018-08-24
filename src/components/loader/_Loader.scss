@@ -1,0 +1,31 @@
+.kpi-loader {
+  margin: $grid-size * 5 auto;
+  width: 60px;
+  height: 30px;
+  
+  > div {
+    float: left;
+    height: 100%;
+    width: $grid-size / 2;
+    margin-right: 1px;
+    animation: loading 1.5s infinite ease-in-out;
+    transform: scaleY(0.05) translateX(-$grid-size);
+  }
+  .tick1 {animation-delay: 0.05s;}
+  .tick2 {animation-delay: 0.1s;}
+  .tick3 {animation-delay: 0.15s;}
+  .tick4 { animation-delay: 0.2s; }
+  .tick5 { animation-delay: 0.25s; }
+  .tick6 { animation-delay: 0.3s; }
+  .tick7 { animation-delay: 0.35s; }
+  .tick8 { animation-delay: 0.4s; }
+  .tick9 { animation-delay: 0.45s; }
+  .tick10 { animation-delay: 0.5s; }
+
+  @keyframes loading {
+    50% {
+      transform: scaleY(1.2) translateX($grid-size);
+      background-color: $shakespeare;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.btn {
+  display: inline-flex;
+  font-size: $font-size-base;
+
+  &-primary, &-secondary {
+    cursor: pointer;
+    height: $grid-size * 3;
+    min-width: $grid-size * 10;
+    user-select: none;
+    border-radius: 4px;
+    text-align: center;
+    padding: $grid-size * 2;
+    
+  }
+
+  &-primary {
+    background-color: $shakespeare;
+    color: $white;
+
+    &:hover {
+      background-color: darken($shakespeare, 10%);
+    }
+  }
+
+  &-secondary {
+    background-color: $white-smoke;
+    color: $shakespeare;
+
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+
+  &-disabled {
+    cursor: default;
+    background-color: $dark-grey;
+    color: $white;
+    &:hover {
+      background-color: $dark-grey;
+    }
+  }
+}
+
+.btn-icon {
+  height: $grid-size * 3;
+  width: $grid-size * 3;
+}

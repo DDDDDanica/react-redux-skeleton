@@ -1,0 +1,18 @@
+@import "assets/scss/variables";
+@import "assets/scss/base";
+@import "assets/scss/fonts";
+@import "components/index";
+@import "pages/header/Header";
+@import "pages/user/User";
+
+.app {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &-body {
+    margin: 0 $grid-size * 4;
+    height: calc(100% - #{$grid-size * 6});
+  }
+}

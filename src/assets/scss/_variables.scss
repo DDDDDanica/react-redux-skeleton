@@ -1,0 +1,56 @@
+/*
+* === COLORS ===
+*/
+// Basic schema
+$black: #000000;
+$shakespeare: #52B9D9;
+$red: #FF5B6E;
+$pink: #F1A3AD;
+$dark-grey: #617181;
+$regular-grey: #8A98A7;
+$light-grey: #EEF1F4;
+$white-smoke: #FAFBFC;
+$white: #FFFFFF;
+
+// Use case
+$primary-background: $white;
+
+$primary-text-color: $black;
+
+/*
+* === FIXED ELEMENT SIZE ===
+*/
+
+$icon-size: 24px;
+
+/*
+* === BREAK POINT ===
+*/
+$break-point-action-bar: 900px;
+$break-point-app-width: 1440px;
+$break-point-app-height: 900px;
+
+/*
+* === FONT FAMILY ===
+*/
+$font-prefix: './assets/fonts';
+
+/*
+* === FONT SIZE & WEIGHT ===
+*/
+$font-size-xxl: 32px !default; 
+$font-size-xl: 24px !default;
+$font-size-lg: 17px !default;
+$font-size-md: 16px !default;
+$font-size-base: 15px !default;  // Assumes the browser default, typically `15px`
+$font-size-sm: 13px !default;
+$font-size-xs: 12px !default;
+$font-size-xxs: 11px !default;
+
+$font-regular: 400;
+$font-medium: 600;
+
+/*
+* === GRID SYSTEM ===
+*/
+$grid-size: 8px;

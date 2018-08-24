@@ -1,0 +1,53 @@
+$modal-width: $grid-size * 80;
+
+.modal{
+  display: none;
+
+  &[data-show="true"] {
+    display: block;
+    z-index: 999;
+  }
+
+  &-bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(222, 227, 233, 0.9);
+    opacity: 0;
+    pointer-events: none;
+
+    &[data-show="true"] {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &-wrapper {
+    width: $modal-width;
+    background-color: $white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: $grid-size * 2;
+
+    &[data-show="true"] {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .dialog {
+      margin: ($grid-size * 5) ($grid-size * 5);
+
+      &Header {
+        margin-bottom: $grid-size;
+      }
+
+      &Content {
+        overflow: hidden;
+      }
+    }
+  }
+}

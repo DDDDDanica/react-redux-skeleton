@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+
+  :before, :after {
+    box-sizing: border-box;
+  }
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: $font-size-base;
+  font-weight: $font-regular;
+  color: $primary-text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  input, textarea, .DayPickerInput {
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  input {
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: $grid-size;
+    height: $grid-size;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $white-smoke;
+    border-radius: $grid-size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: $grid-size;
+    background-color: $dark-grey;
+  }
+}
+
+.wrapper, .content {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-flex, .content-flex {
+  flex: 1;
+}
+
+/*
+* === FONT SIZE ===
+*/
+.mega-heading {
+  font-size: $font-size-xxl;
+  font-weight: $font-medium;
+}
+
+.heading-1 {
+  font-size: $font-size-xl;
+  font-weight: $font-medium;
+}
+
+.heading-2 {
+  font-size: $font-size-lg;
+  font-weight: $font-medium;
+}
+
+.heading-3 {
+  font-size: $font-size-lg;
+  font-weight: $font-regular;
+}
+
+.heading-4 {
+  font-size: $font-size-md;
+  font-weight: $font-medium;
+}
+
+.heading-5 {
+  font-size: $font-size-base;
+  font-weight: $font-medium;
+}
+
+.regular-body {
+  font-size: $font-size-base;
+  font-weight: $font-regular;
+}
+
+.sm-body {
+  font-size: $font-size-sm;
+  font-weight: $font-regular;
+}
+
+.sm-body-medium {
+  font-size: $font-size-sm;
+  font-weight: $font-medium;
+}
+
+.medium-link {
+  font-size: $font-size-xs;
+  font-weight: $font-medium;
+}
+
+.regular-link {
+  font-size: $font-size-xs;
+  font-weight: $font-regular;
+}
+
+.sm-link {
+  font-size: $font-size-xxs;
+  font-weight: $font-regular;
+}
+
+/*
+* === ICON ===
+*/
+.icon {
+  height: $icon-size;
+  width: $icon-size;
+}
+
+/*
+* === POSITION ===
+*/
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-align-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-justify-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-center-top {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute-left-top {
+  position: absolute;
+  left: 0;
+}
+
+.absolute-right-top {
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+
+.absolute-left-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: auto;
+}
+
+.absolute-right-bottom {
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  top: auto;
+}
+
+.absolute-right-center {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 50%;
+  left: auto;
+  transform: translateY(-50%);
+}
+
+.absolute-center-bottom {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  top: auto;
+}
+
+/*
+* === SPECIAL FORMAT ===
+*/
+// Cut string that's too long into ...
+.truncate-string {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
