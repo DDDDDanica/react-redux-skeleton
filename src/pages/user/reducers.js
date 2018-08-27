@@ -4,12 +4,11 @@ const initial = {
   userId: ""
 };
 
-export const kpi = (state = initial, action) => {
+export const user = (state = initial, action) => {
   let newState = state;
   switch (action.type) {
     case FETCH_USER_INFO:
-      const userData = action.payload;
-      let userId = userData[0]["user_id"];
+      let userId = action.payload;
       newState = { ...state, userId };
       break;
   }

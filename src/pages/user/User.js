@@ -5,7 +5,7 @@ import API from "api";
 import { actionGET } from "actions";
 import { FETCH_USER_INFO } from "./actions";
 
-class User extends Component {
+export class User extends Component {
   componentDidMount() {
     this._getUserId();
   }
@@ -15,22 +15,20 @@ class User extends Component {
   };
 
   render() {
-    const { userId } = this.props;
-    return <section className="user">This is {userId}.</section>;
+    const { year, userId } = this.props;
+    return <section className="user-wrapper">Hello {userId} from {year}.</section>;
   }
 }
 
 User.propTypes = {
+  year: PropTypes.string,
   userId: PropTypes.string,
   actionGET: PropTypes.func
 };
 
-function mapStateToProps({ kpi, globalSetting }) {
+function mapStateToProps({ user, globalSetting }) {
   return {
-    allKpis: kpi.allKpis,
-    domainData: kpi.domainData,
-    metricData: kpi.metricData,
-    userId: kpi.userId,
+    userId: user.userId,
     year: globalSetting.year
   };
 }
