@@ -21,6 +21,10 @@
 1. `npm start` - bundle and transpile files using webpack and run the server webpack-dev-server
 2. Open the browser and go to `http://localhost:3100`
 3. `CTRL C` to exit watch
+4. `npm run unit` - run unit test
+5. `npm run test` - run all tests
+6. `npm run lint` - auto fix lint errors 
+ 
 &nbsp;
 ### Production
 
